@@ -1,2 +1,2 @@
-# alx-low_level_programming
-Low-level programming
+# ALX-low_level_programming
+Intoduction to programming
