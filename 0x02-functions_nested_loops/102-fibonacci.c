@@ -6,18 +6,21 @@
 */
 int main(void)
 {
-	int t1, t2, next;
+	long int i, t1, t2, next;
+        
+	t1 = 1;
+	t2 = 2;
+	next = t1 + t2;
 
-	next = 3;
-
-	printf("%d, %d, ", 1, 2);
+	printf("%li, %li, ", t1, t2);
 
 	for (i = 3; i <= 50; ++i)
 	{
-		printf("%d, ", next);
+		printf("%li, ", next);
 		t1 = t2;
 		t2 = next;
 		next = t1 + t2;
 	}
+	printf("\n");
 	return (0);
 }
