@@ -11,13 +11,16 @@ void print_times_table(int n)
 
 	step = 0;
 
-	for (row = 0; row <= n; row++)
+	if (!(n > 15 || n < 0))
 	{
-		for (col = 0; col <= n; col += step)
+		for (row = 0; row <= n; row++)
 		{
-			_putchar((col + '0'));
+			for (col = 0; col <= n; col += step)
+			{
+				_putchar((col + '0'));
+			}
+			step++;
+			_putchar('\n');
 		}
-		step++;
-		_putchar('\n');
 	}
 }
