@@ -1,6 +1,6 @@
 #include <stdlib.h>
 #include <stdio.h>
-#include "holberton.h"
+#include "main.h"
 /**
 * array_range - get len, malloc * len
 * loop size of len to insert min++ into new arr

@@ -1,6 +1,6 @@
 #include <stdlib.h>
 #include <stdio.h>
-#include "holberton.h"
+#include "main.h"
 /**
 * _calloc - print 0s into 2D grid
 * @nmemb: array num
