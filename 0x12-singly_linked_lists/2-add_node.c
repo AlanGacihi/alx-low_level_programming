@@ -1,4 +1,4 @@
-nclude "lists.h"
+#include "lists.h"
 /**
 * add_node - Entry Point
 * @head: input
