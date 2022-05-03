@@ -1,37 +1,16 @@
-#include <stdio.h>
-
+#include "dog.h"
 #include <stdlib.h>
 
-#include "dog.h"
-
 /**
-
-   * free_dog - function that frees dogs
-
-    *
-
-     * @d: pointer argument passed from main
-
-      *
-
-       * Description: function that frees dogs
-
-        */
-
+ * free_dog - Frees dogs.
+ * @d: The dog to be freed.
+ */
 void free_dog(dog_t *d)
-
 {
+  if (d == NULL)
+    return;
 
-		if (d != NULL)
-
-				{
-
-							free(d->owner);
-
-									free(d->name);
-
-											free(d);
-
-												}
-
+  free(d->owner);
+  free(d->name);
+  free(d);
 }
