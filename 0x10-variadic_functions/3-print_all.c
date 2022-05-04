@@ -11,14 +11,15 @@
 void print_all(const char * const format, ...)
 {
 	va_list valist;
-	int n = 0;
-	char *sep = ", ", str;
+	int n = 0, len = strlen(format);
+	char *sep = ", ";
+	char *str;
 
 	va_start(valist, format);
 
 	while (format[n])
 	{
-		if (n  == (strlen(format) - 1))
+		if (n == len - 1)
 			sep = "";
 
 		switch (format[n])
