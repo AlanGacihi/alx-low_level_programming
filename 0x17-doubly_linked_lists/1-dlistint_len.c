@@ -1,7 +1,9 @@
 #include "lists.h"
+
 /**
- * dlistint_len - Gives the size of a linked list.
- * @h: List to get size.
+ * dlistint_len - Determines the size of a linked list.
+ * @h: Head of the list.
+ *
  * Return: Number of nodes of the list.
  */
 size_t dlistint_len(const dlistint_t *h)
